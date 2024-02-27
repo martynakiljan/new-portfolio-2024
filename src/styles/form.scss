@@ -2,10 +2,10 @@
 @import "./variables.scss";
 
 .form__wrapper {
-    max-width: 60%;
+    width: calc(100% - 40px);
     margin: 0 auto;
 
-    @include md-min {
+    @include sm-min {
         max-width: 500px;
     }
 }
@@ -21,11 +21,18 @@
 
 .form__title {
     text-transform: uppercase;
-    letter-spacing: 10px;
+    letter-spacing: 7px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    white-space: nowrap;
+    font-size: 18px;
+
+    @include sm-min {
+        letter-spacing: 10px;
+        font-size: 25px;
+    }
 }
 
 

@@ -9,7 +9,6 @@ const Project = ({ title }) => {
     <div className="title__wrapper">
       <div className="title__inner">
         <h1 className="title">
-          Projects
           <FontAwesomeIcon icon={faBurst} />
           {title} {title} {title} <FontAwesomeIcon icon={faBurst} />
           {title} {title} {title}

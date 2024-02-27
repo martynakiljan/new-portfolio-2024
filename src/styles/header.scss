@@ -7,20 +7,35 @@
     margin: 0 auto;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    @include sm-min {
+        gap: 30px;
+    }
 
     @include md-min {
-        width: 60%;
+        width: 50%;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 0;
     }
+
+    @include xl-min {
+        width: 35%;
+    }
+
 }
 
 .header__top-contact {
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 5px;
     align-items: center;
 
-    @include content-width();
+
+
 
     @include md-min {
         gap: 20px;
@@ -34,9 +49,17 @@
     flex-direction: flex-start;
 }
 
+.header__top-text {
+    font-size: 12px;
+
+    @include md-min {
+        font-size: 14px;
+    }
+}
+
 .header__top-value {
     font-weight: 600;
-    font-size: 12px;
+    font-size: 11px;
     padding: 3px 0;
     text-decoration: none;
     color: $color-main;
@@ -51,8 +74,8 @@
 }
 
 .header__icon {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     background-color: $color-brown;
     border-radius: 50%;
     display: flex;
@@ -67,19 +90,28 @@
 
 .fa-phone,
 .fa-envelope {
-    width: 20px;
+    width: 15px;
     color: $color-bg;
-    height: 20px;
+    height: 15px;
+
+    @include md-min {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 .header__line {
     height: 20px;
     margin: auto;
     border-right: 1px solid $color-secondary;
+
+    @include md-max {
+        display: none;
+    }
 }
 
 .header__left {
-    margin-bottom: 60px;
+    margin-bottom: 30px;
 
     span {
         padding: 0 2px;
@@ -87,6 +119,10 @@
 
     @include md-max {
         text-align: center;
+    }
+
+    @include md-min {
+        margin-bottom: 60px;
     }
 }
 
@@ -106,6 +142,12 @@
     right: 0;
     color: $color-bg;
     text-align: center;
+}
+
+.menu__emotji {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header__bottom-line {
@@ -145,7 +187,11 @@
 }
 
 .header__title {
-    font-size: 50px;
+    font-size: 35px;
+
+    @include md-min {
+        font-size: 50px;
+    }
 }
 
 .header__title-bold {
@@ -161,7 +207,11 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 30px;
+    gap: 10px;
+
+    @include md-min {
+        gap: 30px;
+    }
 }
 
 .header__title-italic {
@@ -193,9 +243,9 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-width: 200px;
-    min-height: 400px;
+    min-height: 300px;
 
-    @include md-min {
+    @include sm-min {
         min-width: 400px;
         min-height: 450px;
     }
