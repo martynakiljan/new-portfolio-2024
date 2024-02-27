@@ -42,7 +42,9 @@
 .project__title {
     font-size: 40px;
     font-family: "Londrina Outline", sans-serif;
-    letter-spacing: 10px;
+    letter-spacing: 12px;
+    color: #6C5F5B;
+
 }
 
 .project__subtitle {
@@ -57,7 +59,7 @@
 
 .project__link {
     border-style: double;
-    border-bottom: 1px solid $color-gray-dark;
+    border-bottom: 1px solid $color-brown;
     width: auto;
     display: block;
     max-width: 50px;

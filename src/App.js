@@ -10,6 +10,7 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import onClickOutside from "react-onclickoutside";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -41,6 +42,10 @@ function App() {
     }
   }, []);
 
+  App.handleClickOutside = () => {
+    setOpenMenu(false);
+  };
+
   return (
     <div className="App">
       {loading ? (
@@ -64,4 +69,8 @@ function App() {
   );
 }
 
-export default App;
+const clickOutsideConfig = {
+  handleClickOutside: () => App.handleClickOutside,
+};
+
+export default onClickOutside(App, clickOutsideConfig);

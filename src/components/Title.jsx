@@ -16,6 +16,26 @@ const Project = ({ title }) => {
           <FontAwesomeIcon icon={faBurst} />
           {title} {title} {title}
           <FontAwesomeIcon icon={faBurst} />
+          {title} {title} {title} <FontAwesomeIcon icon={faBurst} />
+          {title} {title} {title}
+          <FontAwesomeIcon icon={faBurst} />
+          {title} {title} {title}
+          <FontAwesomeIcon icon={faBurst} />
+          {title} {title} {title} <FontAwesomeIcon icon={faBurst} />
+          {title} {title} {title}
+          <FontAwesomeIcon icon={faBurst} />
+          {title} {title} {title}
+          <FontAwesomeIcon icon={faBurst} />
+          {title} {title} {title} <FontAwesomeIcon icon={faBurst} />
+          {title} {title} {title}
+          <FontAwesomeIcon icon={faBurst} />
+          {title} {title} {title}
+          <FontAwesomeIcon icon={faBurst} />
+          {title} {title} {title} <FontAwesomeIcon icon={faBurst} />
+          {title} {title} {title}
+          <FontAwesomeIcon icon={faBurst} />
+          {title} {title} {title}
+          <FontAwesomeIcon icon={faBurst} />
         </h1>
       </div>
     </div>

@@ -19,7 +19,7 @@ $is-web: true;
     margin: 0 auto;
     padding: 0 20px;
 
-    @include md-min() {
+    @include sm-min() {
         padding: 0 40px
     }
 }
