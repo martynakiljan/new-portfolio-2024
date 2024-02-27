@@ -1,0 +1,32 @@
+/** @format */
+import Title from "./Title";
+import "../styles/skills.scss";
+
+const Skills = () => {
+  return (
+    <>
+      <Title title="Skills" />
+      <div className="skills__wrapper skills__wrapper--hard" id="skills">
+        <p className="skill">HTML</p>
+        <p className="skill">CSS</p>
+        <p className="skill">JAVA SCRIPT</p>
+        <p className="skill">REACT</p>
+        <p className="skill">TYPE SCRIPT</p>
+        <p className="skill">BOOTSTRAP</p>
+        <p className="skill">RWD</p>
+        <p className="skill">NPM</p>
+        <p className="skill">WEBPACK</p>
+        <p className="skill">API</p>
+        <p className="skill">FIGMA/ADOBE INDESIGN</p>
+      </div>
+      <p className="skills__and">&</p>
+      <div className="skills__wrapper skills__wrapper--soft">
+        <p className="skill">I'm going to my destination. Always.</p>
+        <p className="skill">I manage my time well.</p>
+        <p className="skill">I'm ambitious.</p>
+      </div>
+    </>
+  );
+};
+
+export default Skills;

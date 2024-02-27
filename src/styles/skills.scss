@@ -1,0 +1,23 @@
+@import "./mixins.scss";
+@import "./variables.scss";
+
+.skills__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include content-width();
+}
+
+.skills__and {
+    text-align: center;
+    margin: 10px 0;
+    font-weight: bold;
+    color: $color-brown;
+}
+
+.skills__wrapper--soft {
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+
+}

@@ -1,0 +1,83 @@
+@import "./mixins.scss";
+@import "./variables.scss";
+
+.form__wrapper {
+    max-width: 60%;
+    margin: 0 auto;
+
+    @include md-min {
+        max-width: 500px;
+    }
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: center;
+    width: 100%;
+}
+
+.form__title {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+input,
+textarea {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid $color-brown;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    padding: 7px 0;
+    margin: 20px 0;
+    width: 100%;
+    font-family: "Varela Round", sans-serif;
+}
+
+.fa-tty {
+    height: 30px;
+    width: 30px;
+}
+
+.form__icon {
+    margin: 20px auto;
+}
+
+.form__row {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+}
+
+.form__name {
+    width: 50%;
+}
+
+.form__email {
+    width: 50%;
+}
+
+.form__number {
+    width: 100%;
+}
+
+.form__submit {
+    border: 1px solid $color-brown;
+    padding: 5px 10px;
+    margin: 0;
+
+    input {
+        border: none;
+        padding: 5px 10px;
+        margin: 0;
+    }
+}
