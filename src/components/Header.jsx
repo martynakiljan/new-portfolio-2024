@@ -73,7 +73,7 @@ const Header = () => {
             <div className="header__photo-box-with-text">
               <p className="header__photo-title">Hello, I am Martyna </p>
               <p className="header__photo-text">
-                I love mountains<br></br>& Traveling! 😎{" "}
+                I love mountains<br></br>& traveling! 😎{" "}
               </p>
             </div>
           </div>
