@@ -17,12 +17,7 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [openMenu, setOpenMenu] = useState(false);
 
-  const [formErrors, setFormErrors] = useState({
-    name: "",
-    email: "",
-    number: "",
-    message: "",
-  });
+  const [formErrors, setFormErrors] = useState({});
 
   useEffect(() => {
     setTimeout(() => {

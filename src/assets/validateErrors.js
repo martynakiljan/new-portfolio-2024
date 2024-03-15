@@ -1,11 +1,17 @@
 /** @format */
 
-
 export const validateNumber = (number, setFormErrors) => {
-  if (number.length < 8) {
-    setFormErrors("number", "incorrect phone number");
+  if (!/^\d+$/.test(number)) {
+    setFormErrors("number", "incorrect phone number!just numbers! ");
+    return false;
+  }
+
+  const cleanedNumber = number.replace(/[-\s()+]/g, "");
+
+  if (cleanedNumber.length < 7) {
+    setFormErrors("number", "incorrect phone number! just numbers!");
+    return false;
   } else {
-    console.log("ok");
     setFormErrors("number", "");
     return true;
   }

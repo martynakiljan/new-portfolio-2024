@@ -5,7 +5,7 @@ const Error = ({ formErrors }) => {
     <ul className="errors">
       {Object.keys(formErrors).map((key, index) => (
         <li className="errors__li" key={index}>
-          {formErrors[key] ? formErrors[key] : null}
+          {formErrors[key] ? `\u{1F62C} ${formErrors[key]}` : null}
         </li>
       ))}
     </ul>

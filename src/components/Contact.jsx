@@ -1,5 +1,5 @@
 /** @format */
-import { useState, useContext } from "react";
+import { useState, useContext, useEffect } from "react";
 import Title from "./Title";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTty } from "@fortawesome/free-solid-svg-icons";
@@ -43,12 +43,11 @@ const Contact = () => {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e, name, value) => {
     e.preventDefault();
-    const name = e.target.name;
-    const value = e.target.value;
     validateInput(name, value);
     setFormData((formData) => ({ ...formData, [name]: value }));
+    isValidForm();
   };
 
   const isValidForm = () => {
@@ -62,6 +61,8 @@ const Contact = () => {
   const isEmptyForm = () => {
     return Object.entries(formData).every(([k, v]) => v !== "");
   };
+
+  useEffect(() => {}, [formErrors]);
 
   return (
     <>
@@ -82,7 +83,7 @@ const Contact = () => {
                 name="fname"
                 id="name_input"
                 value={formData.fname}
-                onChange={handleSubmit}
+                onChange={(e) => handleSubmit(e, e.target.name, e.target.value)}
               ></input>
             </div>
             <div className="form__email">
@@ -93,7 +94,7 @@ const Contact = () => {
                 name="email"
                 id="email_input"
                 value={formData.email}
-                onChange={handleSubmit}
+                onChange={(e) => handleSubmit(e, e.target.name, e.target.value)}
               ></input>
             </div>
           </div>
@@ -105,7 +106,7 @@ const Contact = () => {
               name="number"
               id="number_input"
               value={formData.number}
-              onChange={handleSubmit}
+              onChange={(e) => handleSubmit(e, e.target.name, e.target.value)}
             ></input>
           </div>
           <div className="form__message">
@@ -115,7 +116,7 @@ const Contact = () => {
               placeholder="I'd like to chat about"
               id="message_input"
               value={formData.message}
-              onChange={handleSubmit}
+              onChange={(e) => handleSubmit(e, e.target.name, e.target.value)}
               cols="50"
               rows="5"
             ></textarea>
