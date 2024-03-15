@@ -43,7 +43,7 @@ const Header = () => {
         <div className="header__bottom-col">
           <div className="header__left">
             <span className="header__title header__title-">I am </span>{" "}
-            <span className="header__title header__title-bold header__title-small">
+            <span className="header__title header__title-bold header__title-small header__title-light">
               an
             </span>{" "}
             <span className="header__title header__title-">ambitious </span>{" "}
@@ -61,9 +61,12 @@ const Header = () => {
               </div>
             </button>
             <p className="header__about-me">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-              eget purus eget nibh aliquet commodo eget non ex. Vestibulum ante
-              ipsum primis{" "}
+              Hi! Welcome to my little portfolio. My name is Martyna and I am 29
+              years old. I am from Poland. I speak German and English. I have
+              been in the IT industry for 4 years... I love doing it! Please
+              check out my projects! there is more on github! you will find the
+              link in the upper right corner. I hope you will contact me :)
+              Thanks!{" "}
             </p>
           </div>
         </div>

@@ -11,9 +11,18 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import onClickOutside from "react-onclickoutside";
+import { Context } from "./context/context";
 
 function App() {
   const [loading, setLoading] = useState(true);
+  const [openMenu, setOpenMenu] = useState(false);
+
+  const [formErrors, setFormErrors] = useState({
+    name: "",
+    email: "",
+    number: "",
+    message: "",
+  });
 
   useEffect(() => {
     setTimeout(() => {
@@ -30,10 +39,10 @@ function App() {
     transform: "translate(-50%, -50%)",
   };
 
-  const [openMenu, setOpenMenu] = useState(false);
   const menuToggle = () => {
     setOpenMenu(!openMenu);
   };
+
   const buttonRef = useRef(null);
 
   useEffect(() => {
@@ -46,6 +55,13 @@ function App() {
     setOpenMenu(false);
   };
 
+  const setFormErrorsWrapper = (name, value) => {
+    setFormErrors({
+      ...formErrors,
+      [name]: value,
+    });
+  };
+
   return (
     <div className="App">
       {loading ? (
@@ -56,14 +72,14 @@ function App() {
           className="spinner"
         />
       ) : (
-        <>
+        <Context.Provider value={{ setFormErrorsWrapper, formErrors }}>
           <Menu menuToggle={menuToggle} openMenu={openMenu} />
           <Header />
           <Skills />
           <Projects />
           <Contact />
           <Footer />
-        </>
+        </Context.Provider>
       )}
     </div>
   );
