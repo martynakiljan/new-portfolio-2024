@@ -62,12 +62,10 @@ const Contact = () => {
     return Object.entries(formData).every(([k, v]) => v !== "");
   };
 
-  useEffect(() => {}, [formErrors]);
 
   return (
     <>
       <Title title="Lets talk"></Title>
-
       <div className="form__wrapper" id="contact">
         <form className="form">
           <h1 className="form__title">&bull; Keep in Touch &bull;</h1>

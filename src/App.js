@@ -12,11 +12,11 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import onClickOutside from "react-onclickoutside";
 import { Context } from "./context/context";
+import AnimatedCursor from "react-animated-cursor";
 
 function App() {
   const [loading, setLoading] = useState(true);
   const [openMenu, setOpenMenu] = useState(false);
-
   const [formErrors, setFormErrors] = useState({});
 
   useEffect(() => {
@@ -59,6 +59,14 @@ function App() {
 
   return (
     <div className="App">
+      <AnimatedCursor
+        innerStyle={{
+          backgroundColor: "#41454e",
+        }}
+        outerStyle={{
+          border: "3px solid #41454e",
+        }}
+      />
       {loading ? (
         <RotateLoader
           cssOverride={override}
