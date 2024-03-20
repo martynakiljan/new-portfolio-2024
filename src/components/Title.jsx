@@ -4,9 +4,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBurst } from "@fortawesome/free-solid-svg-icons";
 /** @format */
 import "../styles/all.scss";
-const Project = ({ title }) => {
+const Project = ({ title, id }) => {
   return (
-    <div className="title__wrapper">
+    <div className="title__wrapper" id={id}>
       <div className="title__inner">
         <h1 className="title">
           <FontAwesomeIcon icon={faBurst} />

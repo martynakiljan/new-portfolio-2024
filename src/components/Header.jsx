@@ -54,12 +54,12 @@ const Header = () => {
             </span>
           </div>
           <div className="header__about">
-            <button className="header__scroll-down">
+            <a className="header__scroll-down" href="#projects">
               <p className="header__scroll-text">Scroll down</p>
               <div>
                 <FontAwesomeIcon icon={faArrowUp} />
               </div>
-            </button>
+            </a>
             <p className="header__about-me">
               Hi! Welcome to my little portfolio. My name is Martyna and I am 29
               years old. I am from Poland. I speak German and English. I have

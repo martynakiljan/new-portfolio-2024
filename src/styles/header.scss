@@ -33,8 +33,7 @@
     justify-content: center;
     gap: 5px;
     align-items: center;
-
-
+    width: 50%;
 
 
     @include md-min {
@@ -229,6 +228,12 @@
     background: transparent;
     cursor: pointer;
     border: none;
+    text-decoration: none;
+    color: $color-main;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .fa-arrow-up {

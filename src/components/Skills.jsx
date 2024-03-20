@@ -5,7 +5,7 @@ import "../styles/skills.scss";
 const Skills = () => {
   return (
     <>
-      <Title title="Skills" />
+      <Title title="Skills" id="skills" />
       <div className="skills__wrapper skills__wrapper--hard" id="skills">
         <p className="skill">HTML</p>
         <p className="skill">CSS</p>

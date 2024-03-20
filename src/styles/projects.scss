@@ -13,6 +13,7 @@
     @include md-min {
         flex-direction: row;
         margin: 150px auto;
+        gap: 150px;
     }
 }
 
@@ -20,7 +21,7 @@
     position: relative;
     background-color: $color-gray-dark;
     width: 100%;
-    height: 200px;
+    height: 300px;
 
     @include md-min {
         transform: rotate(18deg);
@@ -74,7 +75,8 @@
     text-decoration: line-through;
 }
 
-.fa-link {
+.fa-link,
+.fa-code {
     padding-right: 5px;
     height: 10px;
     width: 15px;
@@ -88,6 +90,11 @@
     max-width: 50px;
 }
 
+.project__link--github {
+    max-width: 60px;
+    border-bottom: none;
+}
+
 .project__title--text {
     margin: 15px 0;
 }
@@ -98,6 +105,6 @@
 }
 
 .project__tech {
-    margin: 4px 0;
+    margin: 10px 0;
     font-style: italic;
 }
