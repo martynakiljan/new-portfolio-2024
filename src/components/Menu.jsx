@@ -8,12 +8,13 @@ import {
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
-const Menu = ({ menuToggle, openMenu }) => {
+
+const Menu = ({ menuToggle, openMenu, closeMenu }) => {
   return (
     <>
       <div className="menu">
         <div className="menu__inner">
-          <div className="menu__buger" onClick={menuToggle}>
+          <div className="menu__burger" onClick={menuToggle}>
             {openMenu ? (
               <FontAwesomeIcon icon={faXmark} />
             ) : (
@@ -51,25 +52,25 @@ const Menu = ({ menuToggle, openMenu }) => {
         <ul className="menu-open__list">
           <li className="menu-open__li">
             {" "}
-            <a className="menu-open__link" href="#home">
+            <a className="menu-open__link" href="#home" onClick={closeMenu}>
               home
             </a>
           </li>
           <li className="menu-open__li">
             {" "}
-            <a className="menu-open__link" href="#skills">
+            <a className="menu-open__link" href="#skills" onClick={closeMenu}>
               skills
             </a>
           </li>
           <li className="menu-open__li">
             {" "}
-            <a className="menu-open__link" href="#projects">
+            <a className="menu-open__link" href="#projects" onClick={closeMenu}>
               projects
             </a>
           </li>
           <li className="menu-open__li">
             {" "}
-            <a className="menu-open__link" href="#contact">
+            <a className="menu-open__link" href="#contact" onClick={closeMenu}>
               contact
             </a>
           </li>

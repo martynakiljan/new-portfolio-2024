@@ -88,11 +88,13 @@
     width: auto;
     display: block;
     max-width: 50px;
+    cursor: pointer;
 }
 
 .project__link--github {
     max-width: 60px;
     border-bottom: none;
+    cursor: pointer;
 }
 
 .project__title--text {
@@ -102,9 +104,10 @@
 .project__link {
     text-decoration: none;
     color: $color-brown;
+    padding: 0;
 }
 
 .project__tech {
-    margin: 10px 0;
+    margin: 15px 0;
     font-style: italic;
 }

@@ -48,6 +48,10 @@ function App() {
     });
   };
 
+  const closeMenu = () => {
+    setOpenMenu(false);
+  };
+
   return (
     <div className="App">
       {loading ? (
@@ -59,7 +63,11 @@ function App() {
         />
       ) : (
         <Context.Provider value={{ setFormErrorsWrapper, formErrors }}>
-          <Menu menuToggle={menuToggle} openMenu={openMenu} />
+          <Menu
+            menuToggle={menuToggle}
+            openMenu={openMenu}
+            closeMenu={closeMenu}
+          />
           <Header />
           <Skills />
           <Projects />
@@ -71,8 +79,4 @@ function App() {
   );
 }
 
-const clickOutsideConfig = {
-  handleClickOutside: () => App.handleClickOutside,
-};
-
-export default onClickOutside(App, clickOutsideConfig);
+export default App;

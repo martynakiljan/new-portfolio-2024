@@ -2,7 +2,7 @@
 
 export const validateNumber = (number, setFormErrors) => {
   if (!/^\d+$/.test(number)) {
-    setFormErrors("number", "incorrect phone number!just numbers! ");
+    setFormErrors("number", "incorrect phone number! just numbers! ");
     return false;
   }
 

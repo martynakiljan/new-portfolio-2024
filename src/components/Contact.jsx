@@ -1,5 +1,7 @@
 /** @format */
-import { useState, useContext, useEffect } from "react";
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import { useState, useContext } from "react";
 import Title from "./Title";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTty } from "@fortawesome/free-solid-svg-icons";
@@ -14,6 +16,7 @@ import { Context } from "../context/context";
 import Error from "./Error";
 
 const Contact = () => {
+  const form = useRef();
   const defaultFormData = {
     fname: "",
     email: "",
@@ -23,6 +26,7 @@ const Contact = () => {
 
   const [formData, setFormData] = useState(defaultFormData);
   const { formErrors, setFormErrorsWrapper } = useContext(Context);
+  const [successForm, setSuccessForm] = useState(false);
 
   const validateInput = (name, value) => {
     switch (name) {
@@ -62,12 +66,37 @@ const Contact = () => {
     return Object.entries(formData).every(([k, v]) => v !== "");
   };
 
-
+  const sendEmailFun = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+        process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+        form.current,
+        {
+          publicKey: process.env.REACT_APP_EMAILJS_USER_ID,
+        }
+      )
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          setSuccessForm(true);
+          setTimeout(() => {
+            setFormData(defaultFormData);
+            setSuccessForm(false);
+          }, 3000);
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+          setSuccessForm(false);
+        }
+      );
+  };
   return (
     <>
       <Title title="Lets talk"></Title>
       <div className="form__wrapper" id="contact">
-        <form className="form">
+        <form className="form" ref={form}>
           <h1 className="form__title">&bull; Keep in Touch &bull;</h1>
           <div className="form__icon">
             <FontAwesomeIcon icon={faTty} />
@@ -124,10 +153,16 @@ const Contact = () => {
             <button
               id="form_button"
               disabled={!isEmptyForm() || !isValidForm()}
+              onClick={(e) => sendEmailFun(e)}
             >
               SEND MESSAGE!
             </button>
           </div>
+          {successForm ? (
+            <p className="success-btn">
+              THANK YOU! 🖤 I'll get back to you soon!{" "}
+            </p>
+          ) : null}
         </form>
       </div>
     </>

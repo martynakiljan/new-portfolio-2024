@@ -99,6 +99,10 @@
         opacity: 1;
         height: 15vh;
         z-index: 5555;
+
+        @include md-max {
+            height: 25vh;
+        }
     }
 }
 
@@ -145,5 +149,17 @@
 
     &:hover {
         color: $color-brown;
+    }
+}
+
+.menu-open__li {
+    margin: 10px 0;
+}
+
+.menu__burger {
+    &:hover {
+        .fa-bars {
+            color: $color-brown;
+        }
     }
 }

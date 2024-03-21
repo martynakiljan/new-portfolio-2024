@@ -30,7 +30,10 @@ const Header = () => {
             </div>
             <div className="header__top-info">
               <span className="header__top-text">Write me:</span>
-              <a href="kmartynak@icloud.com" className="header__top-value">
+              <a
+                href="mailto:kmartynak@icloud.com"
+                className="header__top-value"
+              >
                 kmartynak@icloud.com
               </a>
             </div>

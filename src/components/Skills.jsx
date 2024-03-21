@@ -21,9 +21,11 @@ const Skills = () => {
       </div>
       <p className="skills__and">&</p>
       <div className="skills__wrapper skills__wrapper--soft">
-        <p className="skill">I'm going to my destination. Always.</p>
-        <p className="skill">I manage my time well.</p>
         <p className="skill">I'm ambitious.</p>
+        <span></span>
+        <p className="skill">I manage my time well.</p>
+        <span></span>
+        <p className="skill">I'm going to my destination.</p>
       </div>
     </>
   );
