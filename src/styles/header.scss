@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px 40px;
+    padding: 20px;
     gap: 10px;
 
     @include sm-min {
@@ -38,11 +38,16 @@
     @include md-min {
         gap: 20px;
     }
+
+    @include lg-min {
+        gap: 5px;
+    }
 }
 
 .header__top-phone {
     justify-content: flex-end;
 }
+
 
 .header__top-info {
     display: flex;
@@ -53,7 +58,7 @@
 }
 
 .header__top-text {
-    font-size: 12px;
+    font-size: 11px;
 
     @include md-min {
         font-size: 14px;
@@ -240,6 +245,7 @@
 
 .header__scroll-down {
     background: transparent;
+    text-align: center;
     cursor: pointer;
     border: none;
     text-decoration: none;
