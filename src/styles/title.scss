@@ -9,7 +9,7 @@
     overflow: hidden;
     animation: move-words 50s linear infinite;
     //position: relative;
-    font-size: 20px;
+    font-size: 30px;
 
     @include md-min {
         font-size: 25px;

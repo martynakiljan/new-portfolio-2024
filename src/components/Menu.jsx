@@ -12,7 +12,6 @@ import {
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const Menu = ({ menuToggle, openMenu, closeMenu }) => {
-
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
 
@@ -28,7 +27,7 @@ const Menu = ({ menuToggle, openMenu, closeMenu }) => {
 
       setTimeout(() => {
         window.scrollTo({ top: scrollPosition, behavior: "smooth" });
-      }, 100); 
+      }, 100);
     }
   };
 
@@ -44,7 +43,7 @@ const Menu = ({ menuToggle, openMenu, closeMenu }) => {
             )}
           </div>
           <div className="menu__logo">
-            <div className="menu__emotji">👩</div>
+            <div className="menu__emotji">👩‍💻</div>
           </div>
 
           <div className="menu__social">
