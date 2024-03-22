@@ -48,10 +48,17 @@
 
 .menu__link--social:nth-of-type(2) {
     @include md-max {
-        padding: 0 7px;
+        padding: 0 10px;
     }
 }
 
+.menu__emotji {
+    font-size: 20px;
+
+    @include md-min {
+        font-size: 25px;
+    }
+}
 
 
 .fa-xmark,

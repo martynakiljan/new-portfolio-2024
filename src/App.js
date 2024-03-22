@@ -27,9 +27,11 @@ function App() {
 
   const override = {
     position: "absolute",
-    top: "50%",
-    left: "50%",
+    top: "0",
+    left: "0",
     transform: "translate(-50%, -50%)",
+    width: "50px",
+    height: "50px",
   };
 
   const menuToggle = () => {
@@ -54,12 +56,14 @@ function App() {
   return (
     <div className="App">
       {loading ? (
-        <RotateLoader
-          cssOverride={override}
-          loading={loading}
-          color="black"
-          className="spinner"
-        />
+        <div className="spinner__container">
+          <RotateLoader
+            cssOverride={override}
+            loading={loading}
+            color="black"
+            className="spinner"
+          />
+        </div>
       ) : (
         <Context.Provider value={{ setFormErrorsWrapper, formErrors }}>
           <Menu

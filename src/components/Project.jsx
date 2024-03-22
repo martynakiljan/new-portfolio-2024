@@ -21,19 +21,21 @@ const Project = ({
         <p className="project__tech">
           <span> 💻 Technologies: {technologies}</span>
         </p>
-        {hrefLive ? (
-          <a className="project__title--text project__link" href={hrefLive}>
-            <FontAwesomeIcon icon={faLink} />
-            live
+        <div className="project__links">
+          {hrefLive ? (
+            <a className="project__title--text project__link" href={hrefLive}>
+              <FontAwesomeIcon icon={faLink} />
+              live
+            </a>
+          ) : null}
+          <a
+            className="project__title--text project__link project__link--github"
+            href={hrefCode}
+          >
+            <FontAwesomeIcon icon={faCode} />
+            code
           </a>
-        ) : null}
-        <a
-          className="project__title--text project__link project__link--github"
-          href={hrefCode}
-        >
-          <FontAwesomeIcon icon={faCode} />
-          code
-        </a>
+        </div>
       </div>
       <div className="projects__col projects__col--right">
         <div className="project__container">
