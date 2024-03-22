@@ -7,9 +7,7 @@
     margin: 40px 0;
     letter-spacing: 10px;
     overflow: hidden;
-    animation: move-words 50s linear infinite;
-    //position: relative;
-    font-size: 30px;
+    font-size: 18px;
 
     @include md-min {
         font-size: 25px;

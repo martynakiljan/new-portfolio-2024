@@ -49,7 +49,7 @@
     flex-direction: column;
     align-items: flex-start;
     flex-direction: flex-start;
-    padding-left: 5px;
+    padding-left: 8px;
 }
 
 .header__top-text {
@@ -62,7 +62,7 @@
 
 .header__top-value {
     font-weight: 600;
-
+    font-size: 11px;
     text-decoration: none;
     color: $color-main;
 
@@ -182,17 +182,20 @@
 }
 
 .header__title {
-    font-size: 55px;
+    font-size: 25px;
 
     @include md-min {
-        font-size: 45px;
+        font-size: 50px;
     }
-
 }
 
 .header__title-bold {
     font-weight: 600;
-    font-size: 55px;
+    font-size: 30px;
+
+    @include md-min {
+        font-size: 50px;
+    }
 }
 
 .header__title-light {
@@ -202,18 +205,19 @@
 }
 
 .header__title-small {
-    font-size: 35px;
+    font-size: 25px;
 }
 
 
 .header__about {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     gap: 10px;
 
     @include sm-min {
         gap: 20px;
+        justify-content: flex-start;
     }
 
     @include md-min {
@@ -250,6 +254,11 @@
 .header__about-me {
     line-height: 1.5;
     width: 70%;
+    font-size: 12px;
+
+    @include sm-min {
+        font-size: 14px;
+    }
 }
 
 .header__photo-img {

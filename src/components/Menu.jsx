@@ -8,7 +8,7 @@ import {
   faInstagram,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
-
+import "../styles/menu.scss";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const Menu = ({ menuToggle, openMenu, closeMenu }) => {

@@ -21,7 +21,7 @@
     position: relative;
     background-color: $color-gray-dark;
     width: 100%;
-    height: 400px;
+    height: 300px;
 
     @include md-min {
         transform: rotate(18deg);
@@ -64,10 +64,14 @@
 }
 
 .project__title {
-    font-size: 50px;
+    font-size: 30px;
     font-family: "Londrina Outline", sans-serif;
     letter-spacing: 12px;
     color: #6C5F5B;
+
+    @include md-min {
+        font-size: 40px;
+    }
 
 }
 
@@ -87,29 +91,26 @@
     border-bottom: 1px solid $color-brown;
     width: auto;
     display: block;
-    max-width: 70px;
+    max-width: 50px;
     cursor: pointer;
-    margin: 10px 0;
+    padding: 15px 0;
 }
 
 .project__link--github {
-    max-width: 70px;
+    max-width: 60px;
     border-bottom: none;
     cursor: pointer;
 }
 
 .project__title--text {
-
     @include md-min {
         margin: 15px 0;
     }
-
 }
 
 .project__link {
     text-decoration: none;
     color: $color-brown;
-    padding: 0;
 }
 
 .project__tech {

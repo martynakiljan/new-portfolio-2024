@@ -5,13 +5,18 @@
 .menu {
     position: sticky;
     top: 0;
+    height: 8vh;
     background-color: $color-main;
     width: 100%;
     padding: 0 20px;
     border-bottom: 2px solid $color-bg;
     z-index: 11111;
     transition: height 0.5s ease-out;
-    padding: 20px 40px;
+
+    @include sm-min {
+        padding: 0 40px;
+        height: 10vh;
+    }
 }
 
 .menu__inner {
@@ -27,22 +32,23 @@
 .fa-github {
     background-color: transparent;
     color: $color-bg;
-    width: 40px;
-    height: 40px;
+    width: 20px;
+    height: 15px;
 
-    @include xs-min {
-        width: 20px;
+    @include md-min {
+        padding: 0 10px;
+    }
+
+    @include md-min {
+        width: 30px;
         height: 20px;
     }
 }
 
 
 .menu__link--social:nth-of-type(2) {
-
-    padding: 0 40px;
-
-    @include md-min {
-        padding: 0 20px;
+    @include md-max {
+        padding: 0 7px;
     }
 }
 
@@ -50,8 +56,8 @@
 
 .fa-xmark,
 .fa-bars {
-    height: 40px;
-    width: 40px;
+    height: 20px;
+    width: 20px;
     cursor: pointer;
     color: $color-bg;
     padding: 0;

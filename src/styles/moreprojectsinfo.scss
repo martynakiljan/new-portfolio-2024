@@ -16,14 +16,14 @@
 }
 
 .more-projects__text {
-    font-size: 20px;
+    font-size: 14px;
     font-weight: lighter;
     display: flex;
     justify-content: center;
     align-items: center;
 
     @include md-min {
-
+        font-size: 18px;
         display: flex;
         justify-content: flex-start;
         align-items: flex-end;
