@@ -50,7 +50,10 @@ const Header = () => {
               an
             </span>{" "}
             <span className="header__title header__title-">ambitious </span>{" "}
-            <span className="header__title header__title-bold">frontend</span>{" "}
+            <br></br>
+            <span className="header__title header__title-bold">
+              frontend
+            </span>{" "}
             <br></br>
             <span className="header__title header__title-italic">
               ingenieur

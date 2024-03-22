@@ -5,18 +5,13 @@
 .menu {
     position: sticky;
     top: 0;
-    height: 5vh;
     background-color: $color-main;
     width: 100%;
     padding: 0 20px;
     border-bottom: 2px solid $color-bg;
     z-index: 11111;
     transition: height 0.5s ease-out;
-
-    @include md-min {
-        padding: 0 40px;
-        height: 10vh;
-    }
+    padding: 20px 40px;
 }
 
 .menu__inner {

@@ -28,6 +28,10 @@ body {
     font-style: normal;
     font-size: 16px;
     overflow-x: hidden;
+
+    @include md-max {
+        font-size: 20px;
+    }
 }
 
 html,
@@ -89,6 +93,12 @@ video {
     -webkit-font-smoothing: antialiased;
     text-size-adjust: none;
 }
+
+input {
+    border-radius: none;
+    outline: none;
+}
+
 
 .spinner {
     width: 50px !important;
