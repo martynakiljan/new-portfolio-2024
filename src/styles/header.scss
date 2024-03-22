@@ -3,12 +3,12 @@
 @import "./variables.scss";
 
 .header__top {
-    padding-top: 20px;
     margin: 0 auto;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px 40px;
     gap: 10px;
 
     @include sm-min {
@@ -19,7 +19,8 @@
         width: 50%;
         justify-content: space-between;
         align-items: flex-start;
-        gap: 0;
+        gap: 25px;
+        padding: 20px;
     }
 
     @include xl-min {
@@ -30,15 +31,17 @@
 
 .header__top-contact {
     display: flex;
-    justify-content: center;
-    gap: 5px;
+    justify-content: flex-start;
     align-items: center;
     width: 50%;
-
 
     @include md-min {
         gap: 20px;
     }
+}
+
+.header__top-phone {
+    justify-content: flex-end;
 }
 
 .header__top-info {
@@ -46,6 +49,7 @@
     flex-direction: column;
     align-items: flex-start;
     flex-direction: flex-start;
+    padding-left: 5px;
 }
 
 .header__top-text {
@@ -59,7 +63,6 @@
 .header__top-value {
     font-weight: 600;
     font-size: 11px;
-    padding: 3px 0;
     text-decoration: none;
     color: $color-main;
 
@@ -73,7 +76,7 @@
 }
 
 .header__icon {
-    width: 25px;
+    min-width: 25px;
     height: 25px;
     background-color: $color-brown;
     border-radius: 50%;
@@ -82,7 +85,7 @@
     align-items: center;
 
     @include md-min {
-        width: 40px;
+        min-width: 40px;
         height: 40px;
     }
 }
@@ -143,17 +146,10 @@
     text-align: center;
 }
 
-.menu__emotji {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .header__bottom-line {
     display: block;
-    width: 70%;
+    width: 90%;
     border-bottom: 1px solid $color-secondary;
-    padding-top: 20px;
     margin: 0 auto;
 
     @include md-min {
@@ -195,6 +191,7 @@
 
 .header__title-bold {
     font-weight: 600;
+    font-size: 40px;
 }
 
 .header__title-light {
@@ -211,11 +208,15 @@
 .header__about {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     gap: 10px;
 
+    @include sm-min {
+        gap: 20px;
+    }
+
     @include md-min {
-        gap: 30px;
+        gap: 40px;
     }
 }
 
@@ -224,6 +225,7 @@
     text-decoration: line-through;
     text-align: center;
     display: block;
+    letter-spacing: 7px;
 }
 
 .header__scroll-down {
@@ -250,7 +252,7 @@
 }
 
 .header__photo-img {
-    background-image: url(../assets/images/myphoto.jpg);
+    background-image: url(../assets/images/photo3.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     min-width: 200px;

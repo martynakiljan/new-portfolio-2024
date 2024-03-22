@@ -10,7 +10,6 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
-import onClickOutside from "react-onclickoutside";
 import { Context } from "./context/context";
 
 function App() {

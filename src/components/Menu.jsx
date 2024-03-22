@@ -1,5 +1,6 @@
 /** @format */
-import "../styles/menu.scss";
+
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -7,9 +8,30 @@ import {
   faInstagram,
   faLinkedinIn,
 } from "@fortawesome/free-brands-svg-icons";
+
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const Menu = ({ menuToggle, openMenu, closeMenu }) => {
+
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+
+    if (element) {
+      const elementRect = element.getBoundingClientRect();
+      let scrollPosition;
+
+      if (window.innerWidth < 768) {
+        scrollPosition = window.scrollY + elementRect.top - 200;
+      } else {
+        scrollPosition = window.scrollY + elementRect.top - 120;
+      }
+
+      setTimeout(() => {
+        window.scrollTo({ top: scrollPosition, behavior: "smooth" });
+      }, 100); 
+    }
+  };
+
   return (
     <>
       <div className="menu">
@@ -58,13 +80,27 @@ const Menu = ({ menuToggle, openMenu, closeMenu }) => {
           </li>
           <li className="menu-open__li">
             {" "}
-            <a className="menu-open__link" href="#skills" onClick={closeMenu}>
+            <a
+              className="menu-open__link"
+              href="#skills"
+              onClick={() => {
+                scrollToSection("skills");
+                closeMenu();
+              }}
+            >
               skills
             </a>
           </li>
           <li className="menu-open__li">
             {" "}
-            <a className="menu-open__link" href="#projects" onClick={closeMenu}>
+            <a
+              className="menu-open__link"
+              href="#projects"
+              onClick={() => {
+                scrollToSection("projects");
+                closeMenu();
+              }}
+            >
               projects
             </a>
           </li>

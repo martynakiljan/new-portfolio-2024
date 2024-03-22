@@ -10,22 +10,23 @@ const Project = ({
   technologies,
   projectUrl,
   hrefLive,
-  hrefCode
+  hrefCode,
 }) => {
   return (
     <div className="projects__project">
       <div className="projects__col projects__col--left">
         <h2 className="project__title--text project__title">{title}</h2>
         <h2 className="project__title--text project__subtitle">{subtitle}</h2>
-
         <p className="project__description">{description}</p>
         <p className="project__tech">
           <span> 💻 Technologies: {technologies}</span>
         </p>
-        <a className="project__title--text project__link" href={hrefLive}>
-          <FontAwesomeIcon icon={faLink} />
-          live
-        </a>
+        {hrefLive ? (
+          <a className="project__title--text project__link" href={hrefLive}>
+            <FontAwesomeIcon icon={faLink} />
+            live
+          </a>
+        ) : null}
         <a
           className="project__title--text project__link project__link--github"
           href={hrefCode}
@@ -42,7 +43,6 @@ const Project = ({
               backgroundImage: `url(${projectUrl})`,
             }}
           />
-
           <div className="project__mask"></div>
         </div>
       </div>

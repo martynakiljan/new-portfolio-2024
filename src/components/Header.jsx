@@ -19,7 +19,7 @@ const Header = () => {
             <div className="header__top-info">
               <span className="header__top-text">Call me:</span>
               <a href="tel:+41779553234" className="header__top-value">
-                +41779553234
+                +41 779553234
               </a>
             </div>
           </div>

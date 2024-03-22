@@ -1,0 +1,43 @@
+.more-projects__container {
+    text-decoration: none;
+    display: block;
+    color: $color-brown;
+    padding: 0 15px;
+    font-size: 20px;
+    @include content-width();
+
+    &:hover {
+
+        p,
+        span {
+            color: $color-gray-dark;
+        }
+    }
+}
+
+.more-projects__text {
+    font-size: 15px;
+    font-weight: lighter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include md-min {
+        font-size: 20px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+}
+
+.more-projectes__text--second {
+    padding: 0 8px;
+}
+
+.fa-github-alt {
+    font-size: 30px;
+}
+
+.more-projectes__text--second {
+    color: $color-main;
+}

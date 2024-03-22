@@ -6,7 +6,7 @@ const Skills = () => {
   return (
     <>
       <Title title="Skills" id="skills" />
-      <div className="skills__wrapper skills__wrapper--hard" id="skills">
+      <div className="skills__wrapper skills__wrapper--hard">
         <p className="skill">HTML</p>
         <p className="skill">CSS</p>
         <p className="skill">JAVA SCRIPT</p>

@@ -89,6 +89,7 @@
     display: block;
     max-width: 50px;
     cursor: pointer;
+    margin: 10px 0;
 }
 
 .project__link--github {
@@ -98,7 +99,11 @@
 }
 
 .project__title--text {
-    margin: 15px 0;
+
+    @include md-min {
+        margin: 15px 0;
+    }
+
 }
 
 .project__link {

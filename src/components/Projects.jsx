@@ -1,13 +1,13 @@
 /** @format */
 import Title from "./Title";
 import "../styles/projects.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLink, faCode } from "@fortawesome/free-solid-svg-icons";
-import project1 from "../assets/images/project1.png";
+import project1 from "../assets/images/project-1.png";
 import project2 from "../assets/images/project2.png";
 import project4 from "../assets/images/project4.png";
 import project3 from "../assets/images/project3.png";
 import Project from "./Project";
+import MoreProjectsInfo from "./MoreProjectsInfo";
+
 const Projects = () => {
   return (
     <>
@@ -48,10 +48,10 @@ const Projects = () => {
           subtitle="The New York Times App"
           description="An application that shows news from around the world"
           technologies="REACT, NPM, CSS, STYLED COMPONENTS, FETCH API"
-          hrefLive="https://www.foos-events.com/"
           hrefCode="https://github.com/martynakiljan/the-new-york-times-app/tree/main"
           projectUrl={project4}
         />
+        <MoreProjectsInfo />
       </div>
     </>
   );
