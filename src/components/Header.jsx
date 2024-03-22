@@ -23,7 +23,6 @@ const Header = () => {
               </a>
             </div>
           </div>
-          {/* //<span className="header__line"></span> */}
           <div className="header__top-contact header__top-email">
             <div className="header__icon">
               <FontAwesomeIcon icon={faEnvelope} />

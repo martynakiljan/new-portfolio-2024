@@ -46,6 +46,7 @@
 
 .header__top-phone {
     justify-content: flex-end;
+    margin-left: -33px;
 }
 
 
@@ -58,7 +59,7 @@
 }
 
 .header__top-text {
-    font-size: 11px;
+    font-size: 10px;
 
     @include md-min {
         font-size: 14px;
@@ -67,13 +68,17 @@
 
 .header__top-value {
     font-weight: 600;
-    font-size: 10px;
+    font-size: 9px;
     text-decoration: none;
     color: $color-main;
 
     @include md-min {
         font-size: 15px;
     }
+}
+
+.header__scroll-text {
+    font-size: 12px;
 }
 
 .header__bottom {
