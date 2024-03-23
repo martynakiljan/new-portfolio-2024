@@ -127,6 +127,10 @@
 
     span {
         padding: 0 2px;
+
+        @include md-min {
+            padding: 0 4px;
+        }
     }
 
     @include md-max {
@@ -135,7 +139,6 @@
 
     @include md-min {
         margin-bottom: 60px;
-                padding: 0 3px;
     }
 }
 
