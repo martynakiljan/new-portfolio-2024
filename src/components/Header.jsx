@@ -44,19 +44,14 @@ const Header = () => {
       <div className="header__bottom">
         <div className="header__bottom-col">
           <div className="header__left">
-            <span className="header__title header__title-">I am </span>{" "}
-            <span className="header__title header__title-bold header__title-small header__title-light">
+            <p className="header__title header__title-">I am </p>{" "}
+            <p className="header__title header__title-bold header__title-small header__title-light">
               an
-            </span>{" "}
-            <span className="header__title header__title-">ambitious </span>{" "}
+            </p>{" "}
+            <p className="header__title header__title-">ambitious </p> <br></br>
+            <p className="header__title header__title-bold">frontend</p>{" "}
             <br></br>
-            <span className="header__title header__title-bold">
-              frontend
-            </span>{" "}
-            <br></br>
-            <span className="header__title header__title-italic">
-              ingenieur
-            </span>
+            <p className="header__title header__title-italic">ingenieur</p>
           </div>
           <div className="header__about">
             <a className="header__scroll-down" href="#projects">
