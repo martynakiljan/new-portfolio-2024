@@ -51,7 +51,7 @@ const Header = () => {
             <p className="header__title header__title-">ambitious </p> <br></br>
             <p className="header__title header__title-bold">frontend</p>{" "}
             <br></br>
-            <p className="header__title header__title-italic">ingenieur</p>
+            <p className="header__title header__title-italic">developer</p>
           </div>
           <div className="header__about">
             <a className="header__scroll-down" href="#projects">
