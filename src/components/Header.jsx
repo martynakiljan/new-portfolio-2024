@@ -62,7 +62,8 @@ const Header = () => {
             </a>
             <p className="header__about-me">
               Hi! Welcome to my little portfolio. My name is Martyna and I am 29
-              years old. I am from Poland. I speak German and English. I have
+              years old. I am from Poland. I speak very good German. My English
+              is still in the process of learning, but I can communicate. I have
               been in the IT industry for 4 years... I love doing it! Please
               check out my projects! there is more on github! you will find the
               link in the upper right corner. I hope you will contact me :)
