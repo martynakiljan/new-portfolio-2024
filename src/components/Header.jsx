@@ -51,7 +51,7 @@ const Header = () => {
             <p className="header__title header__title-">ambitious </p> <br></br>
             <p className="header__title header__title-bold">frontend</p>{" "}
             <br></br>
-            <p className="header__title header__title-italic">developer</p>
+            <p className="header__title header__title-italic">developer</p> 
           </div>
           <div className="header__about">
             <a className="header__scroll-down" href="#projects">
@@ -65,7 +65,7 @@ const Header = () => {
               years old. I am from Poland. I speak very good German. My English
               is still in the process of learning, but I can communicate. I have
               been in the IT industry for 4 years... I love doing it! Please
-              check out my projects! there is more on github! you will find the
+              check out my projects! There is more on github! You will find the
               link in the upper right corner. I hope you will contact me :)
               Thanks!{" "}
             </p>

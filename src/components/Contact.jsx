@@ -11,7 +11,7 @@ import {
   validateNumber,
   validateEmail,
   validateMessage,
-} from "../assets/validateErrors.js";
+} from "../utilis/validateErrors.js";
 import { Context } from "../context/context";
 import Error from "./Error";
 
@@ -47,7 +47,7 @@ const Contact = () => {
     }
   };
 
-  const handleSubmit = (e, name, value) => {
+  const handleFormInputChange = (e, name, value) => {
     e.preventDefault();
     validateInput(name, value);
     setFormData((formData) => ({ ...formData, [name]: value }));
@@ -110,7 +110,7 @@ const Contact = () => {
                 name="fname"
                 id="name_input"
                 value={formData.fname}
-                onChange={(e) => handleSubmit(e, e.target.name, e.target.value)}
+                onChange={(e) => handleFormInputChange(e, e.target.name, e.target.value)}
               ></input>
             </div>
             <div className="form__email">
@@ -121,7 +121,7 @@ const Contact = () => {
                 name="email"
                 id="email_input"
                 value={formData.email}
-                onChange={(e) => handleSubmit(e, e.target.name, e.target.value)}
+                onChange={(e) => handleFormInputChange(e, e.target.name, e.target.value)}
               ></input>
             </div>
           </div>
@@ -133,7 +133,7 @@ const Contact = () => {
               name="number"
               id="number_input"
               value={formData.number}
-              onChange={(e) => handleSubmit(e, e.target.name, e.target.value)}
+              onChange={(e) => handleFormInputChange(e, e.target.name, e.target.value)}
             ></input>
           </div>
           <div className="form__message">
@@ -143,7 +143,7 @@ const Contact = () => {
               placeholder="I'd like to chat about"
               id="message_input"
               value={formData.message}
-              onChange={(e) => handleSubmit(e, e.target.name, e.target.value)}
+              onChange={(e) => handleFormInputChange(e, e.target.name, e.target.value)}
               cols="50"
               rows="5"
             ></textarea>

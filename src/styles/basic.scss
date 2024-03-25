@@ -4,31 +4,31 @@
 *,
 *:before,
 *:after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+  scroll-padding-top: 200px;
 }
 
 .App {
-    overflow-x: hidden;
-    max-width: 1700px;
-    margin: 0 auto;
+  overflow-x: hidden;
+  max-width: 1700px;
+  margin: 0 auto;
 
-    @media (min-width: 1700px) {
-        border: 1px solid $color-main,
-    }
+  @media (min-width: 1700px) {
+    border: 1px solid $color-main;
+  }
 }
 
 body {
-    background-color: $color-bg;
-    font-family: "Varela Round", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
-    overflow-x: hidden;
-
+  background-color: $color-bg;
+  font-family: "Varela Round", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  overflow-x: hidden;
 }
 
 html,
@@ -82,29 +82,29 @@ header,
 nav,
 section,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    vertical-align: baseline;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    text-size-adjust: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: none;
 }
 
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 input {
-    border-radius: none;
-    outline: none;
+  border-radius: none;
+  outline: none;
 }
 
 .spinner__container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50px;
-    height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
 }
