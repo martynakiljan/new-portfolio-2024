@@ -30,7 +30,7 @@ const Projects = () => {
           remove it, mark it as important, move it up or down, or you can
           drag and drop it, you can also mark it as finished!"
           technologies="REACT, MUI, NPM, CSS"
-          hrefLive="https://todo-react2-wheat.vercel.app"
+          hrefLive="https://todo-react-indol-psi.vercel.app/"
           hrefCode="https://github.com/martynakiljan/todo-react"
           projectUrl={project2}
         />
