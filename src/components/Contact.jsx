@@ -116,7 +116,7 @@ const Contact = () => {
             <div className="form__email">
               <label forhtml="email"></label>
               <input
-                type="text"
+                type="email"
                 placeholder="My email is"
                 name="email"
                 id="email_input"
