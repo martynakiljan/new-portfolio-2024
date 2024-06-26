@@ -54,7 +54,7 @@ const Projects = () => {
         />
         <Project
           title="App"
-          subtitle="Book Hotel App (IN PROGRESS)"
+          subtitle="Book Hotel App"
           description="This is an application resembling Booking.com, but much smaller, built with React, TS and Tailwind CSS. It has greater potential and will be expanded :)"
           technologies="REACT, TYPESCRIPT, REACT ROUTER DOM & TAILWIND CSS"
           hrefLive="https://martynakiljan.github.io/book-hotel-app"
