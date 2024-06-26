@@ -53,6 +53,15 @@ const Projects = () => {
           projectUrl={project4}
         />
         <Project
+          title="App"
+          subtitle="Book Hotel App (IN PROGRESS)"
+          description="This is an application resembling Booking.com, but much smaller, built with React, TS and Tailwind CSS. It has greater potential and will be expanded :)"
+          technologies="REACT, TYPESCRIPT, REACT ROUTER DOM & TAILWIND CSS"
+          hrefLive="https://martynakiljan.github.io/book-hotel-app"
+          hrefCode="https://github.com/martynakiljan/book-hotel-app"
+          projectUrl={project6}
+        />
+        <Project
           title="Website"
           subtitle="For Foos Event Company"
           description="A website for cool people who are champions in table football :) They wanted a colorful website - and they got it!"
@@ -60,14 +69,6 @@ const Projects = () => {
           hrefLive="https://www.foos-events.com/"
           hrefCode="https://github.com/martynakiljan/foos-football-website"
           projectUrl={project3}
-        />
-        <Project
-          title="App"
-          subtitle="Book Hotel App (IN PROGRESS)"
-          description="This is an application resembling Booking.com, but much smaller, built with React, TS and Tailwind CSS. It has greater potential and will be expanded :)"
-          technologies="REACT, TYPESCRIPT, REACT ROUTER DOM & TAILWIND CSS"
-          hrefCode="https://github.com/martynakiljan/book-hotel-app"
-          projectUrl={project6}
         />
         <MoreProjectsInfo />
       </div>
