@@ -8,6 +8,7 @@ import project4 from '../assets/images/project4.png'
 import project3 from '../assets/images/project3.png'
 import project5 from '../assets/images/project5.png'
 import project6 from '../assets/images/project6.png'
+import project7 from '../assets/images/project7.png'
 import Project from './Project'
 import MoreProjectsInfo from './MoreProjectsInfo'
 
@@ -43,7 +44,16 @@ const Projects = () => {
           hrefCode="https://github.com/martynakiljan/todo-react"
           projectUrl={project2}
         />
-
+        <Project
+          title="Website"
+          subtitle="for Blimka Phototography"
+          description="
+Website for a photographer from Poland :)"
+          technologies="REACT & SCSS"
+          hrefLive="https://martynakiljan.github.io/website-blimka-photography/"
+          hrefCode="https://github.com/martynakiljan/website-blimka-photography"
+          projectUrl={project7}
+        />
         <Project
           title="App"
           subtitle="The New York Times App"
