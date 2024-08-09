@@ -10,6 +10,7 @@ import project5 from '../assets/images/project5.png'
 import project6 from '../assets/images/project6.png'
 import project7 from '../assets/images/project7.png'
 import project8 from '../assets/images/project8.png'
+import project9 from '../assets/images/project9.png'
 import Project from './Project'
 import MoreProjectsInfo from './MoreProjectsInfo'
 
@@ -74,21 +75,30 @@ Website for a photographer from Poland :)'
 				/>
 				<Project
 					title='Website'
-					subtitle='For Foos Event Company'
-					description='A website for cool people who are champions in table football :) They wanted a colorful website - and they got it!'
-					technologies='JAVASCRIPT & CSS'
-					hrefLive='https://www.foos-events.com/'
-					hrefCode='https://github.com/martynakiljan/foos-football-website'
-					projectUrl={project3}
-				/>
-				<Project
-					title='Website'
 					subtitle='For H.J Architecture'
 					description='Single page for an architect from Zurich'
 					technologies='REACT & SCSS'
 					hrefCode='https://github.com/martynakiljan/architecture-website'
 					hrefLive='https://martynakiljan.github.io/architecture-website/'
 					projectUrl={project8}
+				/>
+					<Project
+					title='Website'
+					subtitle='For Sky Investment'
+					description='Website for a company investing in skyscrapers.'
+					technologies='REACT, REACT ROUTER DOM  & SCSS'
+					hrefCode='https://github.com/martynakiljan/sky-inwestment-website'
+					hrefLive='https://sky-inwestment-website.vercel.app/'
+					projectUrl={project9}
+				/>
+						<Project
+					title='Website'
+					subtitle='For Foos Event Company'
+					description='A website for cool people who are champions in table football :) They wanted a colorful website - and they got it!'
+					technologies='JAVASCRIPT & CSS'
+					hrefLive='https://www.foos-events.com/'
+					hrefCode='https://github.com/martynakiljan/foos-football-website'
+					projectUrl={project3}
 				/>
 				<MoreProjectsInfo />
 			</div>
