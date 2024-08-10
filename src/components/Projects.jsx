@@ -5,7 +5,6 @@ import '../styles/projects.scss'
 import project1 from '../assets/images/project1.png'
 import project2 from '../assets/images/project2.png'
 import project4 from '../assets/images/project4.png'
-import project3 from '../assets/images/project3.png'
 import project5 from '../assets/images/project5.png'
 import project6 from '../assets/images/project6.png'
 import project7 from '../assets/images/project7.png'
@@ -56,6 +55,15 @@ Website for a photographer from Poland :)'
 					hrefCode='https://github.com/martynakiljan/website-blimka-photography'
 					projectUrl={project7}
 				/>
+					<Project
+					title='Website'
+					subtitle='For Sky Investment'
+					description='Website for a company investing in skyscrapers.'
+					technologies='REACT, REACT ROUTER DOM  & SCSS'
+					hrefCode='https://github.com/martynakiljan/sky-inwestment-website'
+					hrefLive='https://sky-investment.vercel.app/'
+					projectUrl={project9}
+				/>
 				<Project
 					title='App'
 					subtitle='The New York Times App'
@@ -82,15 +90,7 @@ Website for a photographer from Poland :)'
 					hrefLive='https://martynakiljan.github.io/architecture-website/'
 					projectUrl={project8}
 				/>
-				<Project
-					title='Website'
-					subtitle='For Sky Investment'
-					description='Website for a company investing in skyscrapers.'
-					technologies='REACT, REACT ROUTER DOM  & SCSS'
-					hrefCode='https://github.com/martynakiljan/sky-inwestment-website'
-					hrefLive='https://sky-investment.vercel.app/'
-					projectUrl={project9}
-				/>
+		
 
 				<MoreProjectsInfo />
 			</div>
