@@ -82,7 +82,7 @@ Website for a photographer from Poland :)'
 					hrefLive='https://martynakiljan.github.io/architecture-website/'
 					projectUrl={project8}
 				/>
-					<Project
+				<Project
 					title='Website'
 					subtitle='For Sky Investment'
 					description='Website for a company investing in skyscrapers.'
@@ -91,15 +91,7 @@ Website for a photographer from Poland :)'
 					hrefLive='https://sky-investment.vercel.app/'
 					projectUrl={project9}
 				/>
-						<Project
-					title='Website'
-					subtitle='For Foos Event Company'
-					description='A website for cool people who are champions in table football :) They wanted a colorful website - and they got it!'
-					technologies='JAVASCRIPT & CSS'
-					hrefLive='https://www.foos-events.com/'
-					hrefCode='https://github.com/martynakiljan/foos-football-website'
-					projectUrl={project3}
-				/>
+
 				<MoreProjectsInfo />
 			</div>
 		</>
