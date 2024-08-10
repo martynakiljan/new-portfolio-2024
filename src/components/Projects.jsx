@@ -88,7 +88,7 @@ Website for a photographer from Poland :)'
 					description='Website for a company investing in skyscrapers.'
 					technologies='REACT, REACT ROUTER DOM  & SCSS'
 					hrefCode='https://github.com/martynakiljan/sky-inwestment-website'
-					hrefLive='https://sky-inwestment-website.vercel.app/'
+					hrefLive='https://sky-investment.vercel.app/'
 					projectUrl={project9}
 				/>
 						<Project
