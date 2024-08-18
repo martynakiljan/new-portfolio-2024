@@ -10,6 +10,7 @@ import project6 from '../assets/images/project6.png'
 import project7 from '../assets/images/project7.png'
 import project8 from '../assets/images/project8.png'
 import project9 from '../assets/images/project9.png'
+import project10 from '../assets/images/project10.png'
 import Project from './Project'
 import MoreProjectsInfo from './MoreProjectsInfo'
 
@@ -48,14 +49,13 @@ const Projects = () => {
 				<Project
 					title='Website'
 					subtitle='for Blimka Phototography'
-					description='
-Website for a photographer from Poland :)'
+					description='Website for a photographer from Poland :)'
 					technologies='REACT & SCSS'
 					hrefLive='https://martynakiljan.github.io/website-blimka-photography/'
 					hrefCode='https://github.com/martynakiljan/website-blimka-photography'
 					projectUrl={project7}
 				/>
-					<Project
+				<Project
 					title='Website'
 					subtitle='For Sky Investment'
 					description='Website for a company investing in skyscrapers.'
@@ -71,6 +71,15 @@ Website for a photographer from Poland :)'
 					technologies='REACT, SCSS, STYLED COMPONENTS & FETCH API'
 					hrefCode='https://github.com/martynakiljan/the-new-york-times-app/tree/main'
 					projectUrl={project4}
+				/>
+				<Project
+					title='Website'
+					subtitle='For a mountain guide'
+					description='A modern website for mountain enthusiasts.'
+					technologies='REACT & SCSS'
+					hrefCode='https://github.com/martynakiljan/your-mountain-guide-website'
+					hrefLive='https://martynakiljan.github.io/your-mountain-guide-website/'
+					projectUrl={project10}
 				/>
 				<Project
 					title='App'
@@ -90,7 +99,6 @@ Website for a photographer from Poland :)'
 					hrefLive='https://martynakiljan.github.io/architecture-website/'
 					projectUrl={project8}
 				/>
-		
 
 				<MoreProjectsInfo />
 			</div>
