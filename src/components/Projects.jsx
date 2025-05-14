@@ -22,7 +22,7 @@ const Projects = () => {
 			<div className='projects__wrapper'>
 				<Project
 					title='Website'
-					subtitle='Yadera GmbH'
+					subtitle='for Yadera GmbH'
 					description='Die Webseite wurde für das Bauunternehmen Yadera GmbH erstellt. Die Seite wurde in Absprache mit dem Firmeninhaber realisiert – alle Anforderungen und Wünsche wurden erfüllt.'
 					technologies='REACT, REACT ROUTER DOM & SCSS '
 					hrefLive='https://www.yadera.ch/'
