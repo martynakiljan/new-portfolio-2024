@@ -24,7 +24,7 @@ const Projects = () => {
 					title='Website'
 					subtitle='Yadera GmbH'
 					description='Die Webseite wurde für das Bauunternehmen Yadera GmbH erstellt. Die Seite wurde in Absprache mit dem Firmeninhaber realisiert – alle Anforderungen und Wünsche wurden erfüllt.'
-					technologies='REACT & SCSS '
+					technologies='REACT, REACT ROUTER DOM & SCSS '
 					hrefLive='https://www.yadera.ch/'
 					hrefCode='https://github.com/martynakiljan/yadera-gmbh'
 					projectUrl={project11}
@@ -40,7 +40,7 @@ const Projects = () => {
 				/>
 				<Project
 					title='Website'
-					subtitle='for Bogdan Gipser u GmbH Company'
+					subtitle='for Bogdan Gipser  GmbH Company'
 					description='Website for a company specializing in dry construction. The company wanted a simple and minimalist website. A Website with built-in customer communication :)'
 					technologies='REACT & SCSS'
 					hrefLive='https://www.bogdan-gipser.ch/'
