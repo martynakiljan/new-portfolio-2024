@@ -1,0 +1,33 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # Workflow uruchomi się po pushu na gałąź `main`
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest # Wybieramy system operacyjny dla procesu
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v3 # Używamy akcji do sklonowania repozytorium
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18' # Określamy wersję Node.js (np. 18)
+
+      - name: Install dependencies
+        run: |
+          npm install  # Instalacja zależności
+
+      - name: Build the project
+        run: |
+          npm run build  # Budowanie aplikacji
+
+      - name: Deploy to GitHub Pages
+        run: |
+          npm run deploy  # Używamy już zainstalowanego gh-pages do deployu
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Autoryzacja z GitHub Token
