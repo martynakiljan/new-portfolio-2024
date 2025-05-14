@@ -28,6 +28,6 @@ jobs:
 
       - name: Deploy to GitHub Pages
         run: |
-          npm run deploy  # Używamy już zainstalowanego gh-pages do deployu
+          npm run deploy 
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Autoryzacja z GitHub Token
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} 
