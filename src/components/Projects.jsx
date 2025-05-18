@@ -40,11 +40,11 @@ const Projects = () => {
 				/>
 				<Project
 					title='Website'
-					subtitle='for Bogdan Gipser  GmbH Company'
+					subtitle='for Bogdan Bau GmbH Company'
 					description='Website for a company specializing in dry construction. The company wanted a simple and minimalist website. A Website with built-in customer communication :)'
 					technologies='REACT & SCSS'
-					hrefLive='https://www.bogdan-gipser.ch/'
-					hrefCode='https://github.com/martynakiljan/website-bogdan-gipser'
+					hrefLive='https://www.bogdan-bau.ch/'
+					hrefCode='https://github.com/martynakiljan/bogdan-bau/'
 					projectUrl={project1}
 				/>
 				<Project
