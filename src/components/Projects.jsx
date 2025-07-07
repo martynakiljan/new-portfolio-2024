@@ -12,6 +12,7 @@ import project8 from '../assets/images/project8.png'
 import project9 from '../assets/images/project9.png'
 import project10 from '../assets/images/project10.png'
 import project11 from '../assets/images/project11.png'
+import project12 from '../assets/images/project12.png'
 import Project from './Project'
 import MoreProjectsInfo from './MoreProjectsInfo'
 
@@ -29,15 +30,7 @@ const Projects = () => {
 					hrefCode='https://github.com/martynakiljan/yadera-gmbh'
 					projectUrl={project11}
 				/>
-				<Project
-					title='App'
-					subtitle='Food App'
-					description="An application enabling food ordering. It's built using React, TypeScript & MUI. Ensuring data persistence even after browser refresh! You can add and remove food items from the cart, search and sort food items, and a form to collect and verify your details. Total price will always be updated."
-					technologies='REACT, TYPESCRIPT, REACT ROUTER DOM, MUI & SCSS '
-					hrefLive='https://eat-app-ts.vercel.app/all-food'
-					hrefCode='https://github.com/martynakiljan/eat-app-ts'
-					projectUrl={project5}
-				/>
+
 				<Project
 					title='Website'
 					subtitle='for Bogdan Bau GmbH Company'
@@ -48,6 +41,15 @@ const Projects = () => {
 					projectUrl={project1}
 				/>
 				<Project
+					title='Password Manager'
+					subtitle='Pass Manager app'
+					description='Eine Anwendung zur Verwaltung von Passwörtern. Du kannst sichere Passwörter generieren, sie speichern, anzeigen, durchsuchen oder löschen – alles in einer modernen Benutzeroberfläche!'
+					technologies='REACT, TS & Tailwind CSS'
+					hrefLive='https://elaborate-yeot-b05283.netlify.app/'
+					hrefCode='https://github.com/martynakiljan/password-manager'
+					projectUrl={project12}
+				/>
+				<Project
 					title='App'
 					subtitle='Todo List'
 					description='An application that helps you create tasks. You can add a task, remove it, mark it as important, move it up or down, or you can drag and drop it, you can also mark it as finished!'
@@ -55,6 +57,15 @@ const Projects = () => {
 					hrefLive='https://todo-react2-wheat.vercel.app'
 					hrefCode='https://github.com/martynakiljan/todo-react'
 					projectUrl={project2}
+				/>
+				<Project
+					title='App'
+					subtitle='Food App'
+					description="An application enabling food ordering. It's built using React, TypeScript & MUI. Ensuring data persistence even after browser refresh! You can add and remove food items from the cart, search and sort food items, and a form to collect and verify your details. Total price will always be updated."
+					technologies='REACT, TYPESCRIPT, REACT ROUTER DOM, MUI & SCSS '
+					hrefLive='https://eat-app-ts.vercel.app/all-food'
+					hrefCode='https://github.com/martynakiljan/eat-app-ts'
+					projectUrl={project5}
 				/>
 				<Project
 					title='Website'
