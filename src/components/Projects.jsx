@@ -13,6 +13,7 @@ import project9 from '../assets/images/project9.png'
 import project10 from '../assets/images/project10.png'
 import project11 from '../assets/images/project11.png'
 import project12 from '../assets/images/project12.png'
+import project13 from '../assets/images/project13.png'
 import Project from './Project'
 import MoreProjectsInfo from './MoreProjectsInfo'
 
@@ -48,6 +49,15 @@ const Projects = () => {
 					hrefLive='https://elaborate-yeot-b05283.netlify.app/'
 					hrefCode='https://github.com/martynakiljan/password-manager'
 					projectUrl={project12}
+				/>
+						<Project
+					title='Budget planner manager'
+					subtitle='Budget planner manager app'
+					description='Budget Planner App ist eine moderne Webanwendung zur einfachen Budgetverwaltung. Du kannst deine Einnahmen und Ausgaben hinzufügen und so deine Finanzen übersichtlich im Blick behalten.'
+					technologies='REACT, REACT ROUTER, TS & Tailwind CSS'
+					hrefLive='https://gorgeous-puffpuff-2bce62.netlify.app/'
+					hrefCode='https://github.com/martynakiljan/budget-planner-app'
+					projectUrl={project13}
 				/>
 				<Project
 					title='App'
