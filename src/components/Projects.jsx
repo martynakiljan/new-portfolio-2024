@@ -44,16 +44,17 @@ const Projects = () => {
 				<Project
 					title='Password Manager'
 					subtitle='Pass Manager app'
-					description='Eine Anwendung zur Verwaltung von Passwörtern. Du kannst sichere Passwörter generieren, sie speichern, anzeigen, durchsuchen oder löschen – alles in einer modernen Benutzeroberfläche!'
+					description='An application for managing passwords. You can generate secure passwords, save them, view, search or delete them – all in a modern user interface!'
 					technologies='REACT, TS & Tailwind CSS'
 					hrefLive='https://elaborate-yeot-b05283.netlify.app/'
 					hrefCode='https://github.com/martynakiljan/password-manager'
 					projectUrl={project12}
 				/>
-						<Project
+
+				<Project
 					title='Budget planner manager'
 					subtitle='Budget planner manager app'
-					description='Budget Planner App ist eine moderne Webanwendung zur einfachen Budgetverwaltung. Du kannst deine Einnahmen und Ausgaben hinzufügen und so deine Finanzen übersichtlich im Blick behalten.'
+					description='Budget Planner App is a modern web application for easy budget management. You can add your income and expenses and keep a clear overview of your finances.'
 					technologies='REACT, REACT ROUTER, TS & Tailwind CSS'
 					hrefLive='https://gorgeous-puffpuff-2bce62.netlify.app/'
 					hrefCode='https://github.com/martynakiljan/budget-planner-app'
