@@ -14,6 +14,7 @@ const Skills = () => {
 				<p className='skill'>REACT</p>
 				<p className='skill'>TYPESCRIPT</p>
 				<p className='skill'>BOOTSTRAP</p>
+				<p className='skill'>WORDPRESS</p>
 				<p className='skill'>RWD</p>
 				<p className='skill'>NPM</p>
 				<p className='skill'>WEBPACK</p>

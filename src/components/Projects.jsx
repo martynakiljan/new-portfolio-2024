@@ -14,6 +14,9 @@ import project10 from '../assets/images/project10.png'
 import project11 from '../assets/images/project11.png'
 import project12 from '../assets/images/project12.png'
 import project13 from '../assets/images/project13.png'
+import project14 from '../assets/images/project14.png'
+import project15 from '../assets/images/project15.png'
+import project16 from '../assets/images/project16.png'
 import Project from './Project'
 import MoreProjectsInfo from './MoreProjectsInfo'
 
@@ -22,6 +25,14 @@ const Projects = () => {
 		<>
 			<Title title='Projects' id='projects' />
 			<div className='projects__wrapper'>
+				<Project
+					title='Website'
+					subtitle='for ElysianBeauty'
+					description='A modern and responsive website built with WordPress.'
+					technologies='WORDPRESS'
+					hrefLive='https://martynakiljan.github.io/ElysianBeauty-Website-WP/'
+					projectUrl={project14}
+				/>
 				<Project
 					title='Website'
 					subtitle='for Yadera GmbH'
@@ -59,6 +70,14 @@ const Projects = () => {
 					hrefLive='https://gorgeous-puffpuff-2bce62.netlify.app/'
 					hrefCode='https://github.com/martynakiljan/budget-planner-app'
 					projectUrl={project13}
+				/>
+				<Project
+					title='Website'
+					subtitle='for Betonliebe'
+					description='A sleek, minimalist one-page website designed in stylish grey tones. Clean layout, smooth scrolling, and subtle animations create a professional and modern look — perfect for portfolios, agencies, or brands that value simplicity.'
+					technologies='WORDPRESS'
+					hrefLive='http://betonliebe.online/'
+					projectUrl={project15}
 				/>
 				<Project
 					title='App'
@@ -121,6 +140,14 @@ const Projects = () => {
 					hrefLive='https://martynakiljan.github.io/book-hotel-app'
 					hrefCode='https://github.com/martynakiljan/book-hotel-app'
 					projectUrl={project6}
+				/>
+					<Project
+					title='Online Shop'
+					subtitle='for Mode Atelier'
+					description='An online store created for practicing with the WooCommerce plugin.'
+					technologies='WORDPRESS & WOOCOMERCE'
+					hrefLive='http://www.mode-atelier.online/'
+					projectUrl={project16}
 				/>
 				<Project
 					title='Website'
