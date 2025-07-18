@@ -1,28 +1,31 @@
 {
   "files": {
     "main.css": "/new-portfolio-2024/static/css/main.d0df7abe.css",
-    "main.js": "/new-portfolio-2024/static/js/main.f394be02.js",
+    "main.js": "/new-portfolio-2024/static/js/main.e54823d8.js",
     "static/js/592.7f72a991.chunk.js": "/new-portfolio-2024/static/js/592.7f72a991.chunk.js",
     "static/media/project11.png": "/new-portfolio-2024/static/media/project11.e3518006debbb71018ed.png",
     "static/media/header1.jpg": "/new-portfolio-2024/static/media/header1.d0ce89ff2579d8c224ce.jpg",
     "static/media/project1.png": "/new-portfolio-2024/static/media/project1.0a37d1526dd15310ae1d.png",
+    "static/media/project16.png": "/new-portfolio-2024/static/media/project16.f4705ec6b8c5464201f8.png",
     "static/media/project6.png": "/new-portfolio-2024/static/media/project6.27f61b261c5225486173.png",
     "static/media/project7.png": "/new-portfolio-2024/static/media/project7.b3ed4b6f08cdaf11edc7.png",
     "static/media/project8.png": "/new-portfolio-2024/static/media/project8.4b744ec0d0834288f782.png",
     "static/media/project10.png": "/new-portfolio-2024/static/media/project10.833c352c5b98f70d35ec.png",
     "static/media/project5.png": "/new-portfolio-2024/static/media/project5.7a3dc6edf5fabad1b867.png",
+    "static/media/project14.png": "/new-portfolio-2024/static/media/project14.54e62387d3c04ba2ce50.png",
     "static/media/project4.png": "/new-portfolio-2024/static/media/project4.3e93bd155d6f0f36683b.png",
     "static/media/project2.png": "/new-portfolio-2024/static/media/project2.e9dad97a4dffc797e5f6.png",
     "static/media/project9.png": "/new-portfolio-2024/static/media/project9.db21ff4bf3cc8804cfa1.png",
     "static/media/project12.png": "/new-portfolio-2024/static/media/project12.9ef0635acb0f194bed3b.png",
+    "static/media/project15.png": "/new-portfolio-2024/static/media/project15.eab108ef64142d15facf.png",
     "static/media/project13.png": "/new-portfolio-2024/static/media/project13.624ff3afaaf07342a459.png",
     "index.html": "/new-portfolio-2024/index.html",
     "main.d0df7abe.css.map": "/new-portfolio-2024/static/css/main.d0df7abe.css.map",
-    "main.f394be02.js.map": "/new-portfolio-2024/static/js/main.f394be02.js.map",
+    "main.e54823d8.js.map": "/new-portfolio-2024/static/js/main.e54823d8.js.map",
     "592.7f72a991.chunk.js.map": "/new-portfolio-2024/static/js/592.7f72a991.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d0df7abe.css",
-    "static/js/main.f394be02.js"
+    "static/js/main.e54823d8.js"
   ]
 }
